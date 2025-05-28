@@ -1,0 +1,30 @@
+{
+  "name": "hasnat-scaffold-cli",
+  "version": "1.0.6",
+  "type": "module",
+  "private": false,
+  "files": [
+    "dist",
+    "src/templates"
+  ],
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target=node",
+    "dev": "bun src/index.ts"
+  },
+  "bin": {
+    "hasnat-scaffold": "dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "@types/fs-extra": "^11.0.4",
+    "chalk": "^5.4.1",
+    "fs-extra": "^11.3.0",
+    "prompts": "^2.4.2"
+  }
+}
